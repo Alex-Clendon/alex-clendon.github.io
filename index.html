@@ -5,15 +5,43 @@
   	<link rel="stylesheet" href="styles/mystyles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+	<style>
+		.hovtxt {
+            background:#ffffff;
+			opacity:1;
+            transition-duration: 0.6s;
+            transition-timing-function: ease-in-out; 
+        }
+		.hovtxt:hover{
+            background: #000000ab;
+        }
+		.hovtxt:hover h2{
+            color: #ffffff;
+			transition-duration: 0.6s;
+            transition-timing-function: ease-in-out; 
+        }
+		a:link{
+    	color: black; 
+		text-decoration: none;
+		}
+  		a:visited{
+    	color: black;
+		text-decoration: none;
+		}
+
+	</style>
 
 </head>
 
-<body class="fade-" style="background-image: url(images/Index\ header.jpg); background-size: cover; background-blend-mode: lighten; background-color: rgba(255, 255, 255, 0.705);">
+<body class="fade-" style="background-image: url(images/Index\ header.jpg); background-size: cover; background-blend-mode: lighten; background-color: rgba(255, 255, 255, 0.705); background-repeat: none;">
 
   <div class="container-fluid">
-		<nav class="navbar navbar-expand navbar-light bg-light sticky-top shadow">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
 			<div class="container-fluid">
 			  <a class="navbar-brand" href="index.html">Group 0603 Assignment 3</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 				  <li class="nav-item">
@@ -50,21 +78,47 @@
 
 <div class="flex-row" style="margin-top: 5%">
 	<div class="col-8 bg-light shadow-lg">
-		<h1>CTiS: Impact of Technology Site</h1>
-	
-
-
-	</ul><p>This mock-up site is intended to support your team project so you can take this as a set of files and as a starting point and adapt it to your preference. 
-	It is built on a W3C site tutorial so does not claim to be flash, but now has an image, [of a paper we wrote a while back on CSED4G (Computing Education for the Social Good)]</p>
-	<p>The site is not particularly well presented, but as the site uses HTML and has been styled with CSS it can be regarded as a <em>"minimum viable product"</em> for the purposes of this project&hellip;
-	It has some default links, which you can take as a start for your site structure.  The <em>Process Support </em>Links provides guidance which will be needed for presenting your final project. </p>
-
-
+		<h1>Group 0603 Reseach Project Home Page.</h1>
 	<!-- Sign and date the page, it's only polite! -->
 	<address>Made 21st March 2023<br>
 	by Alex Clendon in collaboration with group 0603.</address>
 
 	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-4 shadow-lg m-1 hovtxt">
+	<a href="misc/topic.html">
+		<h2 class="pt-5 pb-5 text-center">
+			Technology/Topic
+		</h2>
+	</a>
+	</div>
+	<div class="col-4 shadow-lg m-1 hovtxt">
+		<a href="misc/opportunities.html">
+		<h2 class="pt-5 pb-5 text-center">
+			Opportunities
+		</h2>
+		</a>
+	</div>
+</div>
+<div class="row justify-content-center">
+	<div class="col-4 shadow-lg m-1 hovtxt">
+		<a href="misc/risks.html">
+		<h2 class="pt-5 pb-5 text-center">
+			Risks
+		</h2>
+		</a>
+	</div>
+	<div class="col-4 shadow-lg m-1 hovtxt">
+		<a href="misc/choices.html">
+		<h2 class="pt-5 pb-5 text-center">
+			Choices
+		</h2>
+		</a>
+	</div>
+
+	
 </div>
  
 </center>
